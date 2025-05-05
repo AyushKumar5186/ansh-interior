@@ -122,7 +122,7 @@ export default function GalleryPage() {
     },
   };
 
-  const item = {
+  const item2 = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
   };
@@ -202,7 +202,7 @@ export default function GalleryPage() {
             {filteredItems.map((item) => (
               <motion.div
                 key={item.id}
-                variants={item}
+                variants={item2}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 className={`${getSpanClass(item.size)} transition-all rounded-xl overflow-hidden`}
               >
