@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Twitter, Mail, Phone, MapPin, FacebookIcon, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle, Instagram, FacebookIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import black from "../../images/black.png"
 import white from "../../images/white.png"
 import { useTheme } from '../theme-provider';
-import { InstagramLogoIcon } from '@radix-ui/react-icons';
+// import { InstagramLogoIcon } from '@radix-ui/react-icons';
 export default function Footer() {
-const { theme, setTheme } = useTheme();
+const { theme } = useTheme();
   return (
     <footer className="bg-muted/30 border-t">
       <div className="container mx-auto px-4 py-12">

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, MoonIcon } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/theme-provider';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
-import img1 from "../../images/1.png"
-import img2 from "../../images/2.png"
+// import img1 from "../../images/1.png"
+// import img2 from "../../images/2.png"
 import black from "../../images/black.png"
 import white from "../../images/white.png"
 

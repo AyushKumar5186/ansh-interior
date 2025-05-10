@@ -1,7 +1,7 @@
 // import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 // import ContactForm from '@/components/shared/ContactForm';
-import { MapPin, Mail, Phone, Clock, ArrowRight,  } from "lucide-react";
+import { MapPin, Mail, Phone, ArrowRight,  } from "lucide-react";
 import { useTheme } from "../theme-provider";
 
 import img1 from "../../images/1.png"
@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 // import { Link } from "react-router-dom";
 
 export default function ContactSection() {
- const { theme, setTheme } = useTheme();
+ const { theme,} = useTheme();
  return (
   <section className="py-16" id="contact">
    <div className="container mx-auto px-4">
