@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Interia Interior Design</title>
+        <title>Contact Us | Ansh Interior Design</title>
         <meta name="description" content="Get in touch with Interia's interior design team to start transforming your space." />
       </Helmet>
 
