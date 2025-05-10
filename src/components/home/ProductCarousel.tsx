@@ -52,8 +52,8 @@ export default function ProductCarousel() {
 
   return (
     
-    <section className="py-16 bg-muted/30 ">
-      <div className="container mx-auto ">
+    <section className=" my-4 sm:my-16">
+      <div className="container mx-auto px-4 sm:px-12 py-16 bg-muted/30 rounded-3xl">
         <div className="mb-10 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Featured Design Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

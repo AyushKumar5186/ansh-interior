@@ -8,8 +8,8 @@ import { useTheme } from '../theme-provider';
 export default function Footer() {
 const { theme } = useTheme();
   return (
-    <footer className="bg-muted/30 border-t">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-muted/30 border-t ">
+      <div className="container mx-auto py-12 px-4 sm:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <Link to="/" className="inline-block mb-4">
@@ -90,15 +90,15 @@ const { theme } = useTheme();
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
                 <MapPin size={18} className="text-primary" />
-                <span className="text-muted-foreground">123 Design Street, Creative City</span>
+                <span className="text-muted-foreground">Ramgarh</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-primary" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+91 9973844358</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-primary" />
-                <span className="text-muted-foreground">hello@interia.com</span>
+                <span className="text-muted-foreground">ansinterior01@gmai.com</span>
               </li>
             </ul>
           </div>
@@ -106,7 +106,7 @@ const { theme } = useTheme();
 
         <div className="mt-12 pt-6 border-t border-border">
           <p className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} Interia. All rights reserved.
+            © {new Date().getFullYear()} Ansh Interior. All rights reserved.
           </p>
         </div>
       </div>

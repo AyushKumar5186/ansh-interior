@@ -2,16 +2,21 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import TestimonialsSection from '@/components/shared/TestimonialsSection';
 import { Card, CardContent } from '@/components/ui/card';
+import ContactSection from '@/components/home/ContactSection';
+
 
 export default function AboutPage() {
+
   return (
-    <>
-      <Helmet>
-        <title>About Us | Interia Interior Design</title>
+    <div className='w-screen' >
+        <Helmet>
+        <title>About Us | Ansh Interior Design</title>
         <meta name="description" content="Learn about Interia's approach to interior design and our team of experienced designers." />
       </Helmet>
 
       {/* Hero Section */}
+      <div className=' '>
+        <div className='container px-4 sm:px-12 '>
       <section className="pt-28 pb-16 md:pb-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
@@ -74,7 +79,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Approach */}
-      <section className="py-12 md:py-16 bg-muted/30">
+      <section className="py-12 md:py-16 bg-muted/30 rounded-3xl my-8 sm:my-16">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <motion.h2
@@ -233,6 +238,10 @@ export default function AboutPage() {
 
       {/* Reuse Testimonials */}
       <TestimonialsSection />
-    </>
+            <ContactSection />
+      
+      </div>
+      </div>
+    </div>
   );
 }

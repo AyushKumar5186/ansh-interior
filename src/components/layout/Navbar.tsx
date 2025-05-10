@@ -62,9 +62,9 @@ export default function Navbar() {
             <span className="font-serif text-2xl font-bold">
               {
           theme == "dark" ?
-        <img src={white} alt="" className="w-full h-8 sm:h-16 object-cover"/>
+        <img src={white} alt="" className="w-full h-8 sm:h-12 object-cover"/>
         :
-        <img src={black} alt="" className="w-full h-8 sm:h-16 object-cover "/>
+        <img src={black} alt="" className="w-full h-8 sm:h-12 object-cover "/>
         }
             </span>
           </Link>

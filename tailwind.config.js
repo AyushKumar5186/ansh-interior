@@ -14,11 +14,11 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
-      // container: {
-      //   // "DEFAULT": "px-4",
-      //   "sm" : "px-6",
-      //   center: true
-      // },
+      container: {
+        // "DEFAULT": "px-4",
+        // "sm" : "px-6",
+        center: true
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

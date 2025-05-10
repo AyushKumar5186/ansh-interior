@@ -19,7 +19,7 @@ const galleryItems = [
     title: 'Contemporary Kitchen Design',
     category: 'Kitchen',
     image: 'https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg',
-    size: 'medium',
+    size: 'small',
   },
   {
     id: 3,
@@ -143,12 +143,14 @@ export default function GalleryPage() {
   return (
     <>
       <Helmet>
-        <title>Gallery | Interia Interior Design</title>
+        <title>Our Gallery | Ansh Interior Design</title>
         <meta name="description" content="Explore our portfolio of interior design projects featuring beautiful living rooms, kitchens, bedrooms, and more." />
       </Helmet>
 
-      {/* Hero Section */}
-      <section className="pt-28 pb-16">
+      <div className='w-screen'>
+        <div className='container'>
+          {/* Hero Section */}
+      <section className="pt-28 pb-16 ">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <motion.h1
@@ -206,8 +208,8 @@ export default function GalleryPage() {
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 className={`${getSpanClass(item.size)} transition-all rounded-xl overflow-hidden`}
               >
-                <div className="group relative h-full">
-                  <AspectRatio ratio={16 / 10} className="bg-muted/30">
+                <div className="group relative h-full cursor-pointer">
+                  <AspectRatio ratio={16 / 10} className="bg-muted/30 ">
                     {!loadedImages.includes(item.id) && (
                       <div className="absolute inset-0 flex items-center justify-center bg-muted/30">
                         <div className="w-8 h-8 border-4 border-primary/30 border-t-primary rounded-full animate-spin"></div>
@@ -216,7 +218,7 @@ export default function GalleryPage() {
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                       onLoad={() => handleImageLoaded(item.id)}
                     />
@@ -233,6 +235,8 @@ export default function GalleryPage() {
           </motion.div>
         </div>
       </section>
+        </div>
+      </div>
     </>
   );
 }

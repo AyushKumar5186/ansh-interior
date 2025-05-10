@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 export default function HeroSection() {
  return (
-  <section className="relative min-h-[90vh] md:h-[90vh] flex items-center">
+  <section className="relative min-h-[90vh] md:h-[90vh] flex items-center px-4 sm:px-12">
    {/* Background Image */}
-   <div className="absolute inset-0 z-0">
+   <div className="absolute inset-0 z-0 ">
     <div className="absolute inset-0 bg-black/40" />
     <img
      src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"

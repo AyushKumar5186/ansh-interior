@@ -10,17 +10,19 @@ export default function HomePage() {
       <div className=''>
     <div >
         <Helmet>
-        <title>Interia | Premium Interior Design</title>
+        <title>Ansh Interior | Premium Interior Design</title>
         <meta name="description" content="Transform your space with premium interior design services from Interia. We create beautiful, functional spaces tailored to your lifestyle." />
       </Helmet>
       
-      <div className='w-full'>
-        <div className='container mx-auto '>
+      <div className='w-screen'>
+        <div className='  '>
           <HeroSection />
-      <ProductCarousel />
+      <div className='px-4 sm:px-12'>
+        <ProductCarousel />
       <ProductSection />
       <TestimonialsSection />
       <ContactSection />
+      </div>
         </div>
       </div>
       </div>

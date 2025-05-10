@@ -50,8 +50,8 @@ const item = {
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-16 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section className=" my-8 sm:my-16">
+      <div className="container mx-auto px-8 bg-muted/30 py-16  rounded-3xl">
         <div className="mb-12 text-center">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
